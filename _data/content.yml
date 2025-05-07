@@ -87,7 +87,7 @@ skills:
         text: "기본 구조 이해 및 간단한 웹 페이지를 만들 수 있음"
         value: "25" #0-100 progress in %
 
-      - label: "한글" #0-10 progress in dots
+      - label: "WordPress" #0-10 progress in dots
         text: "DIAT 자격증 보유. 머리글 및 바닥글, 표 또는 그래프를 활용한 보고서 작성 가능"
         value: "70" #0-100 progress in %
 
@@ -97,9 +97,9 @@ skills:
         text: "기본 구조 이해 및 오픈 차트 그래프 구현 가능"
         value: "40" #0-100 progress in %
 
-      - label: "WordPress" #0-10 progress in dots
-        text: "표 또는 그래프를 활용한 보고서 작성 가능"
-        value: "50" #0-100 progress in %
+      - label: "Linux" #0-10 progress in dots
+        text: "리눅스 마스터 2급 자격증 보유. iptables를 통한 방화벽 구축 가능"
+        value: "60" #0-100 progress in %
 
 ### Resume [ resume ]
 resume:
