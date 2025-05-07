@@ -98,7 +98,7 @@ skills:
         value: "40" #0-100 progress in %
 
       - label: "WordPress" #0-10 progress in dots
-        text: "DIAT 자격증 보유. 표 또는 그래프를 활용한 보고서 작성 가능"
+        text: "표 또는 그래프를 활용한 보고서 작성 가능"
         value: "50" #0-100 progress in %
 
 ### Resume [ resume ]
