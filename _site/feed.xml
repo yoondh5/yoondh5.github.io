@@ -1,4 +1,213 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-29T13:46:40+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luique - CV Resume &amp;amp; Personal Portfolio Jekyll Theme</title><subtitle>Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes</subtitle><author><name>Admin</name></author><entry><title type="html">By spite about do of do allow</title><link href="http://localhost:4000/music/2020/08/05/by-spite-about/" rel="alternate" type="text/html" title="By spite about do of do allow" /><published>2020-08-05T00:00:00+03:00</published><updated>2020-08-05T00:00:00+03:00</updated><id>http://localhost:4000/music/2020/08/05/by-spite-about</id><content type="html" xml:base="http://localhost:4000/music/2020/08/05/by-spite-about/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-14T13:45:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luique - CV Resume &amp;amp; Personal Portfolio Jekyll Theme</title><subtitle>Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes</subtitle><author><name>Luique</name></author><entry><title type="html">SK텔레콤 유심 정보 유출 사건 분석</title><link href="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-%EB%B6%84%EC%84%9D/" rel="alternate" type="text/html" title="SK텔레콤 유심 정보 유출 사건 분석" /><published>2025-05-14T00:00:00+09:00</published><updated>2025-05-14T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-%EB%B6%84%EC%84%9D</id><content type="html" xml:base="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-%EB%B6%84%EC%84%9D/"><![CDATA[<h2 id="서론">서론</h2>
+<p>현대 사회에서 개인의 모바일 기기는 단순한 통신 도구를 넘어 금융, 인증, 개인정보 관리 등 일상생활의 핵심 매개체로 자리잡았다. 이러한 배경에서 2025년 4월 발생한 SKT의 대규모 유심(USIM) 정보 유출 사건은 사회적으로 큰 충격과 불안을 야기했다. 유심은 가입자를 식별하고 모바일 네트워크 접속을 인증하는 핵심 요소로, 이와 관련된 정보 유출은 개인정보 침해, 금융 사고, 통신 서비스 도용 등 다양한 2차 피해로 이어질 수 있는 심각한 사안이다.</p>
+
+<p>SKT는 국내 최대 통신사로서 약 2300만 명의 가입자를 보유하고 있으며, 이번 사건은 홈가입자서버(HSS)라는 중앙 집중식 데이터베이스가 해킹 당해 발생했다. HSS는 가입자 정보를 관리하는 중요 시스템으로, 사용자 등록/변경 관리, 인증 비밀키, 가입자 식별(IMSI), 단말기 정보(IMEI) 등 모든 가입자 정보를 관리한다. 이러한 시스템의 침해는 단순한 개별 가입자를 넘어 전체 통신 인프라의 안전성에 대한 의문을 제기하게 한다.</p>
+
+<p>본 보고서는 SKT 유심 정보 유출 사건의 기술적 배경, 원인, 영향 및 대응 방안을 체계적으로 분석하고, 이를 통해 유사 사건의 예방과 대응에 필요한 인사이트를 제공하고자 한다. 특히 홈가입자서버(HSS)의 구조, BPF도어 악성코드의 특성, 심스와핑(SIM Swapping) 공격 위험성, 그리고 효과적인 사용자 및 기관 차원의 대응 전략에 중점을 두고 있다.</p>
+
+<h2 id="관련-연구">관련 연구</h2>
+<h4 id="lte5g-네트워크-구조와-hss의-역할">LTE/5G 네트워크 구조와 HSS의 역할</h4>
+
+<p>LTE(4G) 및 5G 네트워크에서 홈가입자서버(HSS)는 중앙 집중화된 데이터베이스로서 가입자 정보를 관리하는 핵심 역할을 수행한다. HSS는 MME(Mobility Management Entity), SGW(Serving Gateway), PGW(PDN Gateway)와 함께 LTE 코어 네트워크의 중요 구성 요소이다. 구체적으로 HSS는 가입자 인증, 권한 부여, 서비스 프로필 관리 등의 기능을 담당하며, 가입자 식별키(IMSI), 인증 키, QoS 정보 등을 저장한다.</p>
+
+<p>LTE 네트워크에서 HSS는 Diameter 프로토콜을 통해 다른 네트워크 요소와 통신하며, 가입자 데이터를 안전하게 관리하고 필요한 네트워크 노드에 제공한다. 이러한 중앙화된 구조는 효율적인 가입자 관리를 가능하게 하지만, 동시에 공격 대상이 될 경우 광범위한 영향을 미칠 수 있는 단일 장애점이 될 수 있다.</p>
+
+<h4 id="과거-통신사-해킹-및-정보-유출-사례">과거 통신사 해킹 및 정보 유출 사례</h4>
+<p>국내 통신사 대상 해킹 및 정보 유출 사례는 과거에도 여러 차례 발생했다. 특히 2023년 LG유플러스에서 발생한 사건에서는 가입자 29만여 명의 유심 정보와 함께 이름, 생년월일, 주소, 이메일 등의 개인정보가 함께 유출된 바 있다. 그러나 당시에는 이를 기반으로 한 복제폰 피해가 보고되지 않았다.</p>
+
+<p>이외에도 통신사 관련 해킹 사건들이 발생했으나, 이번 SKT 사건은 유심 정보라는 핵심 통신 인증 요소가 유출되었다는 점에서 차별성을 가진다. 이는 모바일 서비스의 안전성 전반에 대한 새로운 위협을 제시한다.</p>
+
+<h4 id="심스와핑-공격-사례">심스와핑 공격 사례</h4>
+<p>심스와핑은 피해자의 유심 정보를 이용해 복제 유심을 만들어 통신 서비스를 도용하는 공격 기법이다. 국내 첫 심스와핑 의심 피해는 2021년 12월에 발생했으며, 피해자의 유심이 새벽 시간에 다른 기기로 이동된 후 가상자산 거래소에서 암호화폐가 탈취되는 방식으로 진행되었다.</p>
+
+<p>KT의 심스와핑 의심 피해가 확산되자 통신사들은 서울경찰청 사이버수사대와 협력하여 이상거래탐지시스템(FDS)을 개발했다. 이 시스템은 동일한 유심 정보를 가진 복제 단말기가 감지될 경우 강제로 작동을 중단시키는 기능을 제공하며, 현재까지 유사 피해 방지에 기여하고 있다.</p>
+
+<h2 id="사고-개요-및-원인-분석">사고 개요 및 원인 분석</h2>
+<h4 id="skt-해킹-사건-발생-경과">SKT 해킹 사건 발생 경과</h4>
+<p>SKT는 2025년 4월 18일 오후 시스템 이상 징후를 처음 인지했으며, 같은 날 밤 해킹 공격 사실을 내부적으로 확인했다. 공격은 홈가입자서버(HSS)에 악성코드가 침투한 것으로 파악됐으며, 이로 인해 가입자 정보가 유출된 것으로 추정된다. 4월 29일 과학기술정보통신부가 발표한 1차 분석 결과에 따르면, 가입자 전화번호, 가입자 식별키(IMSI) 등 유심 복제에 활용될 수 있는 정보 4종과 유심 정보 처리 등에 필요한 SKT 자체 관리용 정보 21종이 유출된 것으로 확인되었다. 다만 단말기 고유식별번호(IMEI) 유출은 없었던 것으로 밝혀졌다.</p>
+
+<p>이 사건으로 인해 SKT는 물론 알뜰폰 가입자를 포함한 모든 고객이 잠재적 위험에 노출되었으며, 이에 정부와 SKT는 민관합동조사단을 구성하여 대응에 나섰다. 
+<img src="../assets/img/blog/sk2.jpg" alt="SK텔레콤 유심 정보 일지" /></p>
+
+<h4 id="bpf도어-악성코드-분석">BPF도어 악성코드 분석</h4>
+<p>이번 SKT 해킹 사태에는 ‘BPF도어’라는 리눅스 기반 백도어 악성코드가 사용된 것으로 알려졌다. BPF도어는 2021년 처음 발견된 이후 중동과 아시아 지역을 대상으로 한 공격에 사용되어 온 것으로 알려져 있다. 이 악성코드는 시스템에 은밀히 잠복한 후, 특정 ‘매직 패킷’을 수신하면 활성화되는 특징을 가지고 있다.</p>
+
+<p>BPF도어의 주요 특징은 다음과 같다:</p>
+<ul>
+  <li>Wake-on-LAN과 유사한 매직 패킷을 통한 활성화</li>
+  <li>TCP, UDP, ICMP 프로토콜을 통한 다양한 명령 수신 능력</li>
+  <li>정상 시스템 프로세스로 위장하여 탐지 회피</li>
+  <li>네트워크 트래픽 위장을 통한 방화벽 탐지 우회</li>
+  <li>내부 네트워크로의 측면 이동 및 추가 감염 능력</li>
+</ul>
+
+<p>특히 주목할 점은 SKT 해킹 사고가 발생하기 5일 전인 4월 14일, 보안 업체 트렌드마이크로가 아시아 지역(한국 포함)의 통신 기업을 대상으로 한 BPF도어 공격을 포착해 관련 보고서를 발표했다는 사실이다. 이는 해당 공격이 조직적이고 계획적으로 이루어졌을 가능성을 시사한다.</p>
+
+<p><img src="../assets/img/blog/sk3.jpg" alt="‘kdmtmpflush’ 삭제 기록 및 검증 화면과 신규 생성된 프로세스 화면" /></p>
+
+<h4 id="홈가입자서버hss-구조-및-취약점">홈가입자서버(HSS) 구조 및 취약점</h4>
+<p>홈가입자서버(HSS)는 LTE/5G 네트워크에서 가입자 정보를 중앙 집중적으로 관리하는 시스템이다. HSS는 다음과 같은 정보를 관리한다:</p>
+
+<ul>
+  <li>가입자 식별 정보 (IMSI, MSISDN 등)</li>
+  <li>인증 및 암호화 키</li>
+  <li>가입자 프로필 및 서비스 권한</li>
+  <li>로밍 정보 및 위치 정보</li>
+</ul>
+
+<p>HSS는 네트워크 핵심 기능을 수행하기 때문에 대체로 내부망에 위치하여 외부 접근으로부터 보호되어야 하지만, 이번 사건에서는 BPF도어와 같은 고도의 악성코드를 통해 침투가 발생했다. HSS의 보안 취약점으로는 리눅스 기반 시스템의 취약점, 패치 미적용, 접근 통제 미흡 등이 가능성으로 제기되고 있다.</p>
+
+<h2 id="유출-정보-분석-및-피해-가능성">유출 정보 분석 및 피해 가능성</h2>
+<h4 id="유출된-정보의-종류와-특성">유출된 정보의 종류와 특성</h4>
+<p>과학기술정보통신부의 1차 분석 결과에 따르면, 이번 사건에서 유출된 정보는 다음과 같다</p>
+
+<ul>
+  <li>가입자 전화번호</li>
+  <li>가입자 식별키(IMSI)</li>
+  <li>유심 복제에 활용될 수 있는 기타 정보 2종</li>
+  <li>유심 정보 처리에 필요한 SKT 관리용 정보 21종</li>
+</ul>
+
+<p>중요한 점은 단말기 고유식별번호(IMEI)는 유출되지 않았다는 것이며, 이름, 주민등록번호, 주소 등의 개인 식별 정보도 HSS에 저장되어 있지 않아 유출되지 않았다. 이는 복제 유심을 통한 피해 가능성을 일부 제한하는 요소이다.</p>
+
+<h4 id="심스와핑-위험-분석">심스와핑 위험 분석</h4>
+<p>심스와핑은 피해자의 유심 정보로 유심을 복제한 뒤, 이를 이용해 복제 폰을 만들어 악용하는 공격이다. 심스와핑이 발생하면 복제된 유심이 정상 인식되어 원래 사용자의 통신이 중단되고, 공격자가 통신 서비스를 장악할 수 있다.</p>
+
+<p>이번 유출된 정보만으로 심스와핑이 가능한지에 대해서는 전문가들 사이에서 의견이 나뉜다. KAIST 전문가는 “IMSI, ICCID, 인증 키(Ki) 같은 정보를 기반으로 유심 복제가 가능하다”고 설명했다. 그러나 동일 유심 정보를 가진 두 단말이 동시에 망에 접속할 수는 없기 때문에, 복제 유심이 활성화될 경우 정상 사용자의 통신이 중단되어 피해 사실을 빠르게 인지할 수 있다.</p>
+
+<p>또한 과학기술정보통신부는 “유심보호서비스에 가입하는 경우 이번에 유출된 정보로는 심스와핑이 방지된다”고 밝혔다. 이는 유출된 정보만으로는 유심보호서비스를 우회할 수 없음을 시사한다.</p>
+
+<h2 id="예상되는-피해-시나리오">예상되는 피해 시나리오</h2>
+<p>가능한 피해 시나리오는 다음과 같다</p>
+
+<ol>
+  <li>복제 유심을 통한 통신 서비스 도용
+    <ul>
+      <li>복제 유심으로 통화/문자 서비스 이용</li>
+      <li>문자 인증을 통한 개인정보 탈취</li>
+    </ul>
+  </li>
+  <li>2단계 인증 우회를 통한 계정 탈취
+    <ul>
+      <li>문자로 전송되는 인증 코드 가로채기</li>
+      <li>금융 서비스, SNS 계정 등 접근</li>
+    </ul>
+  </li>
+  <li>금융 피해
+    <ul>
+      <li>모바일 뱅킹 접근 시도</li>
+      <li>가상자산 거래소 계정 접근 및 자산 탈취</li>
+    </ul>
+  </li>
+</ol>
+
+<p>그러나 전문가들은 실제 피해 가능성에 대해 다양한 의견을 제시한다.</p>
+<blockquote>
+  <p>“유심 정보 유출만으로 과도한 우려는 불필요하다” 중앙대 장항배 교수</p>
+</blockquote>
+
+<blockquote>
+  <p>“복제폰이 만들어지더라도 금융 거래에는 추가 인증이 필요하기 때문에 금융 피해 우려는 크지 않다” 김승주 교수</p>
+</blockquote>
+
+<p>또한 통신사들이 운영 중인 이상거래탐지시스템(FDS)이 복제 단말기 사용을 차단할 수 있어, 실제 피해 가능성은 상당히 제한적일 것으로 예상된다.</p>
+
+<h2 id="대응-방안">대응 방안</h2>
+<h4 id="사용자-측면의-대응-방안">사용자 측면의 대응 방안</h4>
+<ol>
+  <li>유심보호서비스 가입
+    <ul>
+      <li>SKT 홈페이지나 T월드 앱을 통해 무료로 가입 가능</li>
+      <li>등록된 휴대폰 외 다른 기기에서 유심 사용 시 통신 서비스 차단</li>
+    </ul>
+  </li>
+  <li>유심 교체
+    <ul>
+      <li>전국 T월드 매장이나 공항 로밍센터에서 무료 유심 교체 가능</li>
+      <li>유심 교체 전 예약 시스템을 통한 방문 일정 확인 권장</li>
+    </ul>
+  </li>
+  <li>금융 서비스 보안 강화
+    <ul>
+      <li>문자 인증 외 추가 인증 수단(금융인증서, 생체인증) 활용</li>
+      <li>금융앱 로그인 시 추가 인증 단계 설정18</li>
+    </ul>
+  </li>
+  <li>명의도용방지서비스 가입
+    <ul>
+      <li>통신사 제공 서비스(T안심서비스, 명예지킴이, U+안심서비스)</li>
+      <li>정부24 명의도용방지 서비스</li>
+      <li>정보통신진흥협회의 Msafer 명의도용 방지 서비스</li>
+    </ul>
+  </li>
+  <li>피싱 메시지 주의
+    <ul>
+      <li>‘재부팅 요청’ 등의 피싱 메시지에 대응하지 않기</li>
+      <li>의심스러운 메시지는 한국인터넷진흥원(KISA)에 신고</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="통신사-측면의-대응-방안">통신사 측면의 대응 방안</h2>
+
+<ol>
+  <li>이상거래탐지시스템(FDS) 강화
+    <ul>
+      <li>복제 유심 사용 시도 탐지 및 차단</li>
+      <li>비정상적 인증 시도 모니터링</li>
+    </ul>
+  </li>
+  <li>유심보호서비스 확대 및 개선
+    <ul>
+      <li>로밍 중 이용 제한 문제 해결 (SKT는 5월 내 해결 약속)</li>
+      <li>서비스 가입 절차 간소화 및 접근성 향상</li>
+    </ul>
+  </li>
+  <li>시스템 보안 강화
+    <ul>
+      <li>리눅스 기반 백신 및 엔드포인트 탐지·대응(EDR) 시스템 구축</li>
+      <li>네트워크 세그먼테이션 및 접근 통제 강화</li>
+    </ul>
+  </li>
+  <li>투명한 정보 공개 및 소통
+    <ul>
+      <li>사고 경과 및 조사 결과 투명하게 공개</li>
+      <li>이용자 불안 해소를 위한 적극적인 소통</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="결론">결론</h2>
+<p>본 보고서는 2025년 4월 발생한 SK텔레콤의 유심 정보 유출 사건에 대해 기술적 배경, 원인, 영향 및 대응 방안을 종합적으로 분석했다. 이번 사건은 BPF도어라는 고도화된 리눅스 기반 악성코드를 통해 홈가입자서버(HSS)가 침해되어 발생했으며, 가입자 전화번호, 가입자 식별키(IMSI) 등 유심 복제에 활용될 수 있는 정보가 유출된 것으로 확인되었다.</p>
+
+<p>분석 결과, 유출된 정보만으로 심스와핑 공격이 가능할 수 있으나, 유심보호서비스 가입, 이상거래탐지시스템(FDS) 작동, 그리고 금융 서비스의 다중 인증 요구 등으로 인해 실제 피해 가능성은 제한적인 것으로 평가된다. 특히 단말기 고유식별번호(IMEI)가 유출되지 않았다는 점은 복제 유심을 통한 피해 위험을 낮추는 중요한 요소이다.</p>
+
+<p>그럼에도 불구하고, 이 사건은 통신 인프라의 보안 취약성과 개인정보 보호의 중요성을 다시 한번 일깨우는 계기가 되었다. 사용자들은 유심보호서비스 가입, 유심 교체, 명의도용방지서비스 활용 등을 통해 개인의 보안을 강화할 필요가 있으며, 통신사와 관련 기관들은 시스템 보안 강화, 이상 거래 모니터링, 사용자 교육 등을 통해 유사 사건의 재발을 방지하고 피해를 최소화하기 위한 노력을 지속해야 한다.</p>
+
+<p>향후 유사 사건의 예방을 위해서는 리눅스 기반 시스템의 보안 강화, 특히 BPF도어와 같은 은닉 기법을 사용하는 악성코드에 대한 탐지 능력 향상, 그리고 통신 인프라 전반의 보안 점검 및 업데이트가 필요하다. 또한 정부, 통신사, 보안 업체, 금융기관 간의 긴밀한 정보 공유와 협력을 통해 사이버 위협에 대한 조기 대응 체계를 구축하는 것이 중요하다.</p>
+
+<h2 id="참고-문헌">참고 문헌</h2>
+<ol>
+  <li><a href="https://m.boannews.com/html/detail.html?idx=137021">SKT 유심 정보 유출로 본 최악의 시나리오 ‘심스와핑’, 원병철, 2025-04-28</a></li>
+  <li><a href="https://m.boannews.com/html/detail.html?idx=103915">KT 고객 유심 복사로 암호화폐 탈취? 국내 첫 심스와핑 의심 피해 발생, 원병철, 2022-01-05</a></li>
+  <li><a href="https://m.boannews.com/html/detail.html?idx=137027">SKT 해킹에 쓰인 ‘BPF도어’ 악성코드는 무엇?, 이소미, 2025-04-28</a></li>
+  <li><a href="https://www.econovill.com/news/articleView.html?idxno=693609">우리가 SKT 유심 해킹 사태에 대해 알아야 할 것들, 최진홍, 2025-04-26</a></li>
+  <li><a href="https://www.newsworks.co.kr/news/articleView.html?idxno=793762">김용대 KAIST 교수 “SKT 해킹에 ‘유심’ 복제돼도…비정상 접속 차단”, 박광하 , 2025.04.27</a></li>
+  <li><a href="https://www.hani.co.kr/arti/economy/economy_general/1194544.html">‘복제폰’ 노리는 SKT 해커…재부팅 요구 절대 따라선 안 돼, 선담은, 2025-04-29</a></li>
+  <li><a href="https://www.chosun.com/economy/industry-company/2025/04/28/KZRVQEOJTBEJZKBXBTAW5N7IVE/">2년前 LG유플 29만명 털렸지만… ‘폰 복제’ 피해 없었다, 김봉기 유지한 한예나, 2025-04-28</a></li>
+  <li><a href="https://www.chosun.com/economy/tech_it/2025/04/28/RRMMTUCA4FFSZHCV32XIXCE2WU/">中 해커들 많이 쓰는 ‘BPF 도어’ 수법 사용, 유지한, 2025-04-28</a></li>
+  <li><a href="https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=045190-2">홈 가입자 서버, 정보통신기술협회</a></li>
+  <li><a href="https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=177565-1">이상금융거래탐지시스템, 정보통신기술협회</a></li>
+  <li><a href="https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=097887-1">Wake-on-LAN, 정보통신기술협회</a></li>
+  <li><a href="https://www.kait.or.kr/user/MainMenuList.do?cateSeq=8&amp;menuSeq=15">통신 서비스 기반조성, 한국정보통신진흥협회</a></li>
+  <li><a href="https://www.kmib.co.kr/article/view.asp?arcid=0028030949">정부 “단말기 고유식별번호는 유출 안돼…유심 보호 서비스 가입해야”, 권민지, 2025-04-29</a></li>
+  <li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8239995">유심 털렸으면 공인인증서 빼간다?…핵심의혹 팩트체크!, 강나루, 2025-04-28</a></li>
+  <li><a href="https://www.datanet.co.kr/news/articleView.html?idxno=201614">과기부 “SKT 해킹 관련 스미싱 주의해야”, 김선애, 2025-04-28</a></li>
+  <li><a href="https://sales.newploy.net/%EB%AA%85%EC%9D%98%EB%8F%84%EC%9A%A9%EB%B0%A9%EC%A7%80-%EC%84%9C%EB%B9%84%EC%8A%A4-2/">명의도용방지 서비스, 당신의 정보를 지키는 가장 확실한 방법, newploy, 2025-04-28</a></li>
+  <li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8240692">SKT 28만 명 유심 교체…“명의도용 방지 ‘재부팅 요구’ 주의해야”, 최대수, 2025-04-29</a></li>
+  <li><a href="https://www.bbc.com/korean/articles/ceqrd9p9wdyo">SK텔레콤 해킹 사고로 유심 무상 교체 시작…어떤 조치 취해야 하나, BBC NEWS 코리아, 2025-04-28</a></li>
+  <li><a href="https://netmanias.com/ko/post/techdocs/10634/lte/lte-network-architecture-basic">LTE 네트워크 구조</a></li>
+</ol>]]></content><author><name>Yoon Daehwan</name></author><category term="보고서" /><category term="SK텔레콤" /><category term="유심_정보_유출" /><category term="정보_보안" /><category term="IMSI" /><summary type="html"><![CDATA[서론 현대 사회에서 개인의 모바일 기기는 단순한 통신 도구를 넘어 금융, 인증, 개인정보 관리 등 일상생활의 핵심 매개체로 자리잡았다. 이러한 배경에서 2025년 4월 발생한 SKT의 대규모 유심(USIM) 정보 유출 사건은 사회적으로 큰 충격과 불안을 야기했다. 유심은 가입자를 식별하고 모바일 네트워크 접속을 인증하는 핵심 요소로, 이와 관련된 정보 유출은 개인정보 침해, 금융 사고, 통신 서비스 도용 등 다양한 2차 피해로 이어질 수 있는 심각한 사안이다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/sk.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/sk.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">By spite about do of do allow</title><link href="http://localhost:4000/music/2020/08/05/by-spite-about/" rel="alternate" type="text/html" title="By spite about do of do allow" /><published>2020-08-05T00:00:00+09:00</published><updated>2020-08-05T00:00:00+09:00</updated><id>http://localhost:4000/music/2020/08/05/by-spite-about</id><content type="html" xml:base="http://localhost:4000/music/2020/08/05/by-spite-about/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
 
 <p>Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old.</p>
 
@@ -21,7 +230,7 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Ryan'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Ryan' to STDOUT.</span>
-</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Music" /><category term="rock" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog9.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog9.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Two Before Arrow Not Relied</title><link href="http://localhost:4000/design/2020/07/20/two-before-arrow/" rel="alternate" type="text/html" title="Two Before Arrow Not Relied" /><published>2020-07-20T00:00:00+03:00</published><updated>2020-07-20T00:00:00+03:00</updated><id>http://localhost:4000/design/2020/07/20/two-before-arrow</id><content type="html" xml:base="http://localhost:4000/design/2020/07/20/two-before-arrow/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
+</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Music" /><category term="rock" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog9.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog9.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Two Before Arrow Not Relied</title><link href="http://localhost:4000/design/2020/07/20/two-before-arrow/" rel="alternate" type="text/html" title="Two Before Arrow Not Relied" /><published>2020-07-20T00:00:00+09:00</published><updated>2020-07-20T00:00:00+09:00</updated><id>http://localhost:4000/design/2020/07/20/two-before-arrow</id><content type="html" xml:base="http://localhost:4000/design/2020/07/20/two-before-arrow/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
 
 <p>Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old.</p>
 
@@ -44,7 +253,7 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Ryan'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Ryan' to STDOUT.</span>
-</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Design" /><category term="code" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog8.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog8.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design in Mobile Application</title><link href="http://localhost:4000/mobile/2020/07/05/design-in-mobile/" rel="alternate" type="text/html" title="Design in Mobile Application" /><published>2020-07-05T00:00:00+03:00</published><updated>2020-07-05T00:00:00+03:00</updated><id>http://localhost:4000/mobile/2020/07/05/design-in-mobile</id><content type="html" xml:base="http://localhost:4000/mobile/2020/07/05/design-in-mobile/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
+</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Design" /><category term="code" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog8.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog8.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Design in Mobile Application</title><link href="http://localhost:4000/mobile/2020/07/05/design-in-mobile/" rel="alternate" type="text/html" title="Design in Mobile Application" /><published>2020-07-05T00:00:00+09:00</published><updated>2020-07-05T00:00:00+09:00</updated><id>http://localhost:4000/mobile/2020/07/05/design-in-mobile</id><content type="html" xml:base="http://localhost:4000/mobile/2020/07/05/design-in-mobile/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
 
 <p>Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old.</p>
 
@@ -67,7 +276,7 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Ryan'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Ryan' to STDOUT.</span>
-</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Mobile" /><category term="app" /><category term="mobile" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog-2.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">By spite about what to do</title><link href="http://localhost:4000/design/2020/06/15/by-spite-what/" rel="alternate" type="text/html" title="By spite about what to do" /><published>2020-06-15T00:00:00+03:00</published><updated>2020-06-15T00:00:00+03:00</updated><id>http://localhost:4000/design/2020/06/15/by-spite-what</id><content type="html" xml:base="http://localhost:4000/design/2020/06/15/by-spite-what/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
+</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Mobile" /><category term="app" /><category term="mobile" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog-2.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog-2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">By spite about what to do</title><link href="http://localhost:4000/design/2020/06/15/by-spite-what/" rel="alternate" type="text/html" title="By spite about what to do" /><published>2020-06-15T00:00:00+09:00</published><updated>2020-06-15T00:00:00+09:00</updated><id>http://localhost:4000/design/2020/06/15/by-spite-what</id><content type="html" xml:base="http://localhost:4000/design/2020/06/15/by-spite-what/"><![CDATA[<p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.</p>
 
 <p>Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining determine few her two cordially admitting old.</p>
 
@@ -90,25 +299,4 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Ryan'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Ryan' to STDOUT.</span>
-</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Design" /><category term="Jekyll" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/video/music/2020/01/08/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-01-08T00:00:00+02:00</published><updated>2020-01-08T00:00:00+02:00</updated><id>http://localhost:4000/video/music/2020/01/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/video/music/2020/01/08/welcome-to-jekyll/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in <a href="https://jekyllrb.com/docs/usage/">many different ways</a>, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code><sup id="fnref:posts" role="doc-noteref"><a href="#fn:posts" class="footnote" rel="footnote">1</a></sup> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
-</code></pre></div></div>
-
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:posts" role="doc-endnote">
-      <p>Footnote test. <a href="#fnref:posts" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Sarah Rose</name></author><category term="[&quot;Video&quot;, &quot;Music&quot;]" /><category term="Jekyll" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog-4-scaled-1.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog-4-scaled-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</code></pre></div></div>]]></content><author><name>Ryan Adlard</name></author><category term="Design" /><category term="Jekyll" /><summary type="html"><![CDATA[So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
