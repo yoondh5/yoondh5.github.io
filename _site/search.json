@@ -1,11 +1,19 @@
 [
   
     {
+      "title"    : "SK텔레콤 유심 정보 유출 사건 분석",
+      "category" : "보고서",
+      "tags"     : "SK텔레콤, 유심_정보_유출, 정보_보안, IMSI",
+      "url"      : "/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-%EB%B6%84%EC%84%9D/",
+      "date"     : "2025-05-14 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "By spite about do of do allow",
       "category" : "Music",
       "tags"     : "rock",
       "url"      : "/music/2020/08/05/by-spite-about/",
-      "date"     : "2020-08-05 00:00:00 +0300"
+      "date"     : "2020-08-05 00:00:00 +0900"
     } ,
   
     {
@@ -13,7 +21,7 @@
       "category" : "Design",
       "tags"     : "code",
       "url"      : "/design/2020/07/20/two-before-arrow/",
-      "date"     : "2020-07-20 00:00:00 +0300"
+      "date"     : "2020-07-20 00:00:00 +0900"
     } ,
   
     {
@@ -21,7 +29,7 @@
       "category" : "Mobile",
       "tags"     : "app, mobile",
       "url"      : "/mobile/2020/07/05/design-in-mobile/",
-      "date"     : "2020-07-05 00:00:00 +0300"
+      "date"     : "2020-07-05 00:00:00 +0900"
     } ,
   
     {
@@ -29,15 +37,7 @@
       "category" : "Design",
       "tags"     : "Jekyll",
       "url"      : "/design/2020/06/15/by-spite-what/",
-      "date"     : "2020-06-15 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "Welcome to Jekyll!",
-      "category" : "VideoMusic",
-      "tags"     : "Jekyll",
-      "url"      : "/video/music/2020/01/08/welcome-to-jekyll/",
-      "date"     : "2020-01-08 00:00:00 +0200"
+      "date"     : "2020-06-15 00:00:00 +0900"
     } 
   
 ]
