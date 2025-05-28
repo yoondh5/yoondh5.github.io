@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-21T13:45:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luique - CV Resume &amp;amp; Personal Portfolio Jekyll Theme</title><subtitle>Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes</subtitle><author><name>Luique</name></author><entry><title type="html">KS한국고용정보 개인정보 유출 사태 분석 보고서</title><link href="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/" rel="alternate" type="text/html" title="KS한국고용정보 개인정보 유출 사태 분석 보고서" /><published>2025-05-14T00:00:00+09:00</published><updated>2025-05-14T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C</id><content type="html" xml:base="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/"><![CDATA[<h2 id="서론">서론</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T12:41:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luique - CV Resume &amp;amp; Personal Portfolio Jekyll Theme</title><subtitle>Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes</subtitle><author><name>Luique</name></author><entry><title type="html">SK텔레콤 유심 정보 유출 사건 2차 조사 결과 분석 보고서</title><link href="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/28/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-2%EC%B0%A8-%EC%A1%B0%EC%82%AC-%EA%B2%B0%EA%B3%BC-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/" rel="alternate" type="text/html" title="SK텔레콤 유심 정보 유출 사건 2차 조사 결과 분석 보고서" /><published>2025-05-28T00:00:00+09:00</published><updated>2025-05-28T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/28/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-2%EC%B0%A8-%EC%A1%B0%EC%82%AC-%EA%B2%B0%EA%B3%BC-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C</id><content type="html" xml:base="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/28/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-2%EC%B0%A8-%EC%A1%B0%EC%82%AC-%EA%B2%B0%EA%B3%BC-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/"><![CDATA[<h2 id="서론">서론</h2>
+<p>본 보고서는 2025년 5월 19일 공개된 SK텔레콤 유심 정보 유출 사건의 2차 조사 결과를 종합적으로 분석한다. 민관합동조사단의 추가 조사에서 기존 발표보다 확대된 피해 규모가 확인되었으며, 단말기 고유식별번호(IMEI) 및 개인정보 유출 가능성이 새롭게 제기되었다. 이번 조사는 리눅스 서버 3만 대를 포괄하는 강화된 점검을 통해 진행되었으며, 복제폰 생성 위험성과 향후 대응 방안을 재평가하는 계기가 되었다.</p>
+
+<h2 id="2차-조사-결과의-주요-발견">2차 조사 결과의 주요 발견</h2>
+<h4 id="피해-규모의-확대">피해 규모의 확대</h4>
+
+<p>민관합동조사단은 2차 조사에서 총 23대의 서버 감염을 확인했으며, 이는 1차 조사 시점(5대) 대비 18대가 추가된 수치다. 감염된 서버 중 15대에 대한 포렌식 분석이 완료되었으며, 나머지 8대는 5월 말까지 조사가 진행 중이다. 유출된 유심 정보는 가입자 식별키(IMSI) 기준 26,957,749건으로, SKT의 현 가입자 수(약 2,500만 명)를 초과하는 규모다. 이는 과거 SKT를 거쳐 다른 통신사로 번호이동한 고객 정보까지 포함된 결과로 해석되며, IoT 기기 및 스마트워치 등 다중 단말 보유 사례를 고려할 때 실제 피해 범위는 더 클 수 있다.</p>
+
+<p>악성코드 종류도 1차 조사 시 4종에서 BPF도어 계열 24종, 웹셸 1종 등 총 25종으로 확대 확인되었다. 특히 4차 점검에서는 국내외에서 알려진 BPF도어 변종 202종을 탐지할 수 있는 맞춤형 도구가 활용되어 은닉된 악성코드까지 적발되었다.</p>
+
+<p><img src="/assets/img/blog/sk6.jpg" alt="민관합동조사단 조사 결과(자료=과학기술정보통신부)" /></p>
+
+<h4 id="단말기-고유식별번호imei-유출-가능성">단말기 고유식별번호(IMEI) 유출 가능성</h4>
+<p>1차 조사에서 배제되었던 IMEI 유출 가능성이 새롭게 제기되었다. 조사단은 개인정보 임시 저장 서버 2대의 감염 사실을 확인했으며, 이 중 29만 1,831건의 IMEI가 포함된 파일이 존재함을 밝혔다. 해당 서버는 통합고객인증 시스템과 연동되어 이름, 생년월일, 전화번호, 이메일 등 개인정보도 함께 저장되어 있었다.</p>
+
+<p>다만 2023년 12월 이후 로그 기록이 존재하는 기간 동안에는 유출 사례가 없었으나, 2022년 6월 악성코드 최초 설치 시점부터 2023년 12월까지의 기간에 대해서는 로그 미비로 유출 여부를 확인할 수 없는 상태다. SKT는 IMEI 유출 시에도 제조사의 물리적 인증 절차를 우회할 수 없어 복제폰 생성이 불가능하다고 주장하지만, 전문가들은 IMEI와 IMSI의 결합 유출이 향후 보안 위협으로 작용할 수 있음을 경고한다.</p>
+
+<h4 id="악성코드의-확산-경로">악성코드의 확산 경로</h4>
+<p>BPF도어는 Wake-on-LAN 기술을 악용한 매직 패킷을 통해 활성화되며, TCP/UDP/ICMP 프로토콜을 활용해 내부 네트워크로의 측면 이동을 수행한다. 이번 사례에서는 2022년 6월 15일 최초 감염된 서버를 시작으로 3년간 지속된 공격이 확인되었으며, 해커가 SKT의 보안 취약점을 장기간 관찰하며 공격 경로를 확장한 것으로 추정된다.</p>
+
+<p>특히 중국 정부 지원 해커 집단의 관여 가능성이 제기되며, 이는 국가 차원의 사이버 안보 위협으로까지 확대 해석될 수 있다. 조사단은 국내 모든 통신사와 주요 플랫폼 기업에 대한 사전 점검을 실시했으나, 현재까지 타 기관에서의 유사 피해는 보고되지 않았다.</p>
+
+<h2 id="기술적-영향-재평가">기술적 영향 재평가</h2>
+<h4 id="복제폰-생성-가능성">복제폰 생성 가능성</h4>
+<p>과학기술정보통신부는 IMEI 유출 가능성에도 불구하고 “복제폰 물리적 생성 불가능”을 재차 강조했다. SKT가 도입한 정상인증차단시스템(FDS) 2.0은 사용자, 유심, 단말기의 3중 인증을 통해 복제 단말기의 망 접속을 차단하며, 이동통신 표준 자체가 동일 유심 정보의 중복 접속을 허용하지 않기 때문이다.</p>
+
+<p>그러나 정보보호 전문가들은 이번 유출로 장기적 표적 공격(Long-Term Targeted Attack) 위험이 증가할 수 있음을 지적한다. 유출된 IMSI와 IMEI 조합을 활용해 특정 개인을 겨냥한 스피어 피싱(Spear Phishing) 또는 사회공학적 기만 공격이 발생할 경우, 2차 피해로 이어질 수 있다.</p>
+
+<h4 id="개인정보-유출-리스크">개인정보 유출 리스크</h4>
+<p>개인정보 임시 저장 서버의 감염으로 이름, 생년월일, 전화번호, 이메일 등이 유출될 가능성이 제기되었다. SKT는 해당 서버의 데이터가 일시적 캐시 형태로만 저장되었으며, 실제 유출 증거는 없다고 주장하지만, 로그 기록의 부재로 인해 완전한 반박은 어려운 상황이다. 이는 유럽 GDPR 기준으로 볼 경우 ‘개인정보 침해’로 분류될 수 있으며, 향후 법적 분쟁으로까지 확대될 수 있는 잠재적 위험을 내포한다.</p>
+
+<h2 id="대응-체계의-진화">대응 체계의 진화</h2>
+<h4 id="skt의-기술적-조치">SKT의 기술적 조치</h4>
+<p>SKT는 FDS 2.0 시스템을 최고 보안 단계로 상향 조정하고, 실시간 비정상 인증 모니터링을 강화했다. 유심보호서비스 가입자를 대상으로는 해외 로밍 중 이용 제한 문제를 5월 내 해결할 예정이며, eSIM 교체 서비스도 확대 운영 중이다.</p>
+
+<p>또한 AI 기반 이상행위 탐지 엔진을 도입해 기존 시그니처(Signature) 기반 탐지에서 벗어나, 비정상적 데이터 접근 패턴을 사전에 차단하는 시스템을 구축했다. 이는 BPF도어와 같은 파일리스(Fileless) 악성코드 대응에 특화된 조치로 평가받는다.</p>
+
+<h4 id="정부-차원의-제도-개선">정부 차원의 제도 개선</h4>
+<p>과학기술정보통신부는 6월까지 통신사 보안 가이드라인을 개정할 계획이다. 주요 내용은 다음과 같다:</p>
+
+<ul>
+  <li>리눅스 서버에 대한 주기적 침투 테스트 의무화</li>
+  <li>3개월 간격의 포렌식 로그 백업 시스템 구축</li>
+  <li>내부자 위협 방지를 위한 Zero Trust 아키텍처 적용</li>
+</ul>
+
+<p>이와 함께, 악성코드 정보 공유 플랫폼(KISIA)을 통해 모든 통신사가 실시간 위협 인텔리전스를 교환할 수 있는 체계를 마련 중이다.</p>
+
+<h2 id="향후-과제-및-권고-사항">향후 과제 및 권고 사항</h2>
+<h4 id="기술적-보완점">기술적 보완점</h4>
+
+<ul>
+  <li>로그 관리 체계 개선: 3년간의 로그 미비는 사고 원인 규명을 어렵게 했으며, 향후 5년 이상의 로그 저장 의무화가 필요하다.</li>
+  <li>물리적·논리적 분리 강화: HSS와 같은 핵심 시스템을 외부망과 완전히 격리하는 Air-Gapped 네트워크 구축이 시급하다.</li>
+  <li>암호화 키 순환 주기 단축: 현재 10년 주기의 Ki 키 관리 체계를 3년으로 단축해 유출 시 피해를 최소화해야 한다.</li>
+</ul>
+
+<h4 id="정책적-제언">정책적 제언</h4>
+
+<ul>
+  <li>유심 정보 유출 대응법 제정: 기존 개인정보보호법과 별개로, 통신 인증 정보의 특수성을 반영한 전용 법안 마련이 필요하다.</li>
+  <li>국제 공조 체계 강화: BPF도어가 중동·아시아 지역에서 활발히 사용되는 점을 감안, INTERPOL 및 국제 통신 표준화 기구(3GPP)와의 협력을 확대해야 한다</li>
+</ul>
+
+<h2 id="결론">결론</h2>
+<p>2차 조사 결과는 SKT 유심 정보 유출 사건이 초기 예상보다 복잡한 다층적 공격임을 입증했다. 3년에 걸친 장기침투, 25종의 악성코드 변종 활용, IMEI 유출 가능성 등은 현대 사이버 공격의 진화된 형태를 보여준다. 기술적 대응과 함께 로그 관리, 법제도 정비 등 종합적 접근이 필요한 시점이다. 사용자는 유심보호서비스 가입과 주기적 패스워드 변경을 통해 개인 위험을 최소화해야 하며, 통신사는 물리적·인공지능적 방어 체계의 혼합(hybrid) 구축에 집중해야 할 것이다.</p>
+
+<h2 id="참고-문헌">참고 문헌</h2>
+<ol>
+  <li><a href="https://byline.network/2025/05/19-481/">SKT 해킹사고 2차 조사 발표…2696만건 유심정보 유출, 남혜현, 2025-05-19</a></li>
+  <li><a href="https://daily.hankooki.com/news/articleView.html?idxno=1217994">SK텔레콤, 2차 조사결과에 “추가 데이터 유출 확인 안돼”, 장정우, 2025-05-19</a></li>
+  <li><a href="http://www.kitvnews.co.kr/news/article.html?no=1302004">과기정통부 민관합동조사단, SKT 침해사고 조사결과 2차 발표, 이원영, 2025-05-19</a></li>
+  <li><a href="https://www.ytn.co.kr/_ln/0102_202505191500317247">SKT 해킹으로 개인정보·IMEI 유출 가능성 추가확인, 김태민, 2025.05.19</a></li>
+  <li><a href="https://www.chosun.com/economy/industry-company/2025/05/19/CIWXBMK5O5CPDGTAIEXD67LR5A/">SKT 해킹, 사실상 전 가입자 유심정보 털렸다… 2695만건 유출, 이기우, 2025-05-19</a></li>
+  <li><a href="https://www.etnews.com/20250519000055">SKT 감염서버 23대로 늘어…IMEI·개인정보도 유출 가능성, 박준호, 2025-05-19</a></li>
+  <li><a href="https://www.hani.co.kr/arti/economy/economy_general/1198294.html">SKT, 3년간 악성코드 설치 몰랐다…유심 정보 2700만건 유출, 선담은, 2025-05-19</a></li>
+</ol>]]></content><author><name>Yoon Daehwan</name></author><category term="보고서" /><category term="SK텔레콤" /><category term="유심_정보_유출" /><category term="정보_보안" /><category term="IMSI" /><category term="2차_조사" /><summary type="html"><![CDATA[서론 본 보고서는 2025년 5월 19일 공개된 SK텔레콤 유심 정보 유출 사건의 2차 조사 결과를 종합적으로 분석한다. 민관합동조사단의 추가 조사에서 기존 발표보다 확대된 피해 규모가 확인되었으며, 단말기 고유식별번호(IMEI) 및 개인정보 유출 가능성이 새롭게 제기되었다. 이번 조사는 리눅스 서버 3만 대를 포괄하는 강화된 점검을 통해 진행되었으며, 복제폰 생성 위험성과 향후 대응 방안을 재평가하는 계기가 되었다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/sk5.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/sk5.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">KS한국고용정보 개인정보 유출 사태 분석 보고서</title><link href="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/" rel="alternate" type="text/html" title="KS한국고용정보 개인정보 유출 사태 분석 보고서" /><published>2025-05-14T00:00:00+09:00</published><updated>2025-05-14T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C</id><content type="html" xml:base="http://localhost:4000/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/14/KS%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/"><![CDATA[<h2 id="서론">서론</h2>
 <p>2025년 4월 19일 발생한 KS한국고용정보의 개인정보 유출 사건은 국내 BPO(비즈니스 프로세스 아웃소싱) 산업 역사상 최대 규모의 데이터 침해 사례로 기록될 만큼 심각한 보안 위협을 노출시켰다. 총 22GB의 민감 정보가 유출되었으며, 이는 약 3만 6천 명의 전·현직 임직원 정보를 포괄하는 방대한 규모다. 특히 주민등록증 사본, 통장 사본, 근로계약서 등 암호화되지 않은 고위험 문서들이 대량으로 유출되어 2차 피해 가능성이 극대화되고 있다. 본 보고서는 LummaC2 인포스틸러 악성코드를 통한 침투부터 다크웹 데이터 거래까지의 전 과정을 기술적으로 분석하고, SKT 유심 정보 유출과의 연계 가능성을 포함한 향후 대응 전략을 제시한다.</p>
 
 <h2 id="사고-개요">사고 개요</h2>

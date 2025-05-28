@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "SK텔레콤 유심 정보 유출 사건 2차 조사 결과 분석 보고서",
+      "category" : "보고서",
+      "tags"     : "SK텔레콤, 유심_정보_유출, 정보_보안, IMSI, 2차_조사",
+      "url"      : "/%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/05/28/SK%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9C%A0%EC%8B%AC-%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B1%B4-2%EC%B0%A8-%EC%A1%B0%EC%82%AC-%EA%B2%B0%EA%B3%BC-%EB%B6%84%EC%84%9D-%EB%B3%B4%EA%B3%A0%EC%84%9C/",
+      "date"     : "2025-05-28 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "KS한국고용정보 개인정보 유출 사태 분석 보고서 ",
       "category" : "보고서",
       "tags"     : "KS한국고용정보, LummaC2, 개인정보보호위원회, KISA",
