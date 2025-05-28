@@ -20,9 +20,9 @@ hero:
   bg_title: "Cyber Security"
   info:
     - num: "2 <strong>+</strong>"
-      value: "Years of <strong>Experience</strong>"
+      value: "Years of <strong>Education</strong>"
 
-    - num: "4"
+    - num: "1"
       value: "Completed <strong>Projects</strong>"
 
 ### Services [ services ]
@@ -32,6 +32,10 @@ services:
   bg_title: "Services"
 
   items:
+    - title: "방화벽 구축"
+      subtitle: "snort, iptables tools를 통한 방화벽"
+      text: "기본적인 방화벽 + IDS 구축 가능"
+
     - title: "웹 디자인"
       subtitle: "웹 분야"
       text: "플랜에 따른 웹 디자인 레이아웃 구현 가능"
@@ -39,12 +43,6 @@ services:
     - title: "프레젠테이션 제작"
       subtitle: "프레젠테이션 분야"
       text: "플랜에 따른 표, 그래프등을 통한 발표자료 제작 가능"
-
-    - title: "Sound Track"
-      subtitle: "Music Writing"
-      text: "Music copying, writing, creating, transcription and composition services."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
 
 ### Skills [ skills ]
 skills:
@@ -94,39 +92,10 @@ resume:
   education:
     title: "Education"
     items:
-      - name: "CoderHouse Courses"
-        subname: "Backend Programming"
-        period: "2014 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "Lviv National Academy of Arts"
-        subname: "Faculty of Design"
-        period: "2012 - 2014"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "IT Future"
-        subname: "High School"
-        period: "2010 - 2012"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-  experience:
-    title: "Experience"
-    items:
-      - name: "UI Head &amp; Manager"
-        subname: "Soft Tech Inc."
-        period: "2020 - <b>Present</b>"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "UI / UX Specialist"
-        subname: "Kana Design Studio"
-        period: "2018 - 2020"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "Plugins Developer"
-        subname: "Fiverr.com"
-        period: "2016 - 2018"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
+      - name: "한국폴리텍대학 강서캠퍼스 사이버보안과"
+        subname: "보안 엔지니어 교육"
+        period: "2023 - 2026(졸업예정)"
+        text: "보안 엔지니어 C, JAVA, PYTHON 기본 교육 실시"
 
 ### Testimonials [ testimonials ]
 testimonials:
