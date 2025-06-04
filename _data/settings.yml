@@ -6,36 +6,16 @@
 settings:
   skin: "light" # select initial skin option: "light" or "dark"
 
-### Preloader
-preloader:
-  logo:
-    image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
-
 ### Header
 header:
   logo:
-    image: "assets/img/logo2.png"
+    image: "assets/img/logo8.png"
     alt: "Zoé Miller"
-
-### Social
-social:
-  - title: "Twitter"
-    icon: "fab fa-twitter"
-    url: "http://twitter.com"
-
-  - title: "Dribbble"
-    icon: "fab fa-dribbble"
-    url: "http://dribbble.com"
-
-  - title: "Behance"
-    icon: "fab fa-behance"
-    url: "http://behance.com"
 
 ### Footer
 footer:
   developer: "Developed by <strong>bslthemes</strong>"
-  copyright: "<strong>Luique</strong>. All rights reserved"
+  copyright: "<strong>yoondh5</strong>. All rights reserved"
 
 ### Portfolio Filters Settings
 portfolio:

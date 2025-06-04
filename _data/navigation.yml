@@ -31,11 +31,6 @@ main:
     url: "#resume-section"
     parent: 0
 
-  # Testimonials
-  - title: "Testimonials"
-    url: "#testimonials-section"
-    parent: 0
-
   # Blog
   - title: "Blog"
     url: "#blog-section"
