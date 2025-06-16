@@ -94,8 +94,25 @@ resume:
     items:
       - name: "한국폴리텍대학 강서캠퍼스 사이버보안과"
         subname: "보안 엔지니어 교육"
-        period: "2023 - 2026(졸업예정)"
+        period: "<b>2023 - 2026(졸업예정)</b>"
         text: "보안 엔지니어 C, JAVA, PYTHON 기본 교육 실시"
+  experience:
+    title: "Goals"
+    items:
+      - name: "네트워크 보안 인재"
+        subname: "기본기 및 경험 축적"
+        period: "<b>1~2년차</b>"
+        text: "네트워크/시스템 보안 운영 및 실무 프로젝트에 주도적으로 참여하며 네트워크 기본기 및 장비를 운용하는 법을 배우고 네트워크 트래픽 분석 및 장애 대응 경험을 축적"
+
+      - name: "위협 탐지 전문가"
+        subname: "전문가로 발전"
+        period: "<b>3~4년차</b>"
+        text: "네트워크 보안 설계 및 보고서 작성, 보안성 검토 경험하고 보안 시스템 로그 분석, 위협 탐지 및 대응 역량을 강화"
+
+      - name: "네트워크 보안 전문가"
+        subname: "신규 보안 위협 분석"
+        period: "<b>5년차 이상</b>"
+        text: "신규 보안 위협 분석 및 최신 기술을 학습 및 적용하며 대외 발표 및 커뮤니케이션 역량을 강화"
 
 ### Testimonials [ testimonials ]
 testimonials:
