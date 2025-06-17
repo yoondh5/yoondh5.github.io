@@ -95,7 +95,11 @@ resume:
       - name: "한국폴리텍대학 강서캠퍼스 사이버보안과"
         subname: "보안 엔지니어 교육"
         period: "<b>2023 - 2026(졸업예정)</b>"
-        text: "보안 엔지니어 C, JAVA, PYTHON 기본 교육 실시"
+        text: "보안 엔지니어 툴(iptables, snort 등) 및 프로그래밍 언어(C, JAVA, PYTHON) 기본 교육 실시"
+      - name: "리눅스 마스터 2급"
+        subname: "리눅스 기본 자격증"
+        period: "<b>2025</b>"
+        text: "리눅스 마스터 2급 자격증 취득"
   experience:
     title: "Goals"
     items:
