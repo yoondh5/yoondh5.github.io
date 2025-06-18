@@ -19,8 +19,9 @@ info:
 description1:
   show: yes
   title: Project Result
-  text: "<p>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi.</p>
-  <p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</p>"
+  text: "현재 융합프로젝트 수업에서 진행중인 IPS 프로젝트로 IPS 웹페이지 프론트엔드 개발을 담당하였습니다."
+  
+  
 
 gallery:
   - assets/img/works/ips2.png
